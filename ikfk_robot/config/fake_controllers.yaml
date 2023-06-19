@@ -1,0 +1,19 @@
+controller_list:
+  - name: fake_ikfk_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - j2
+      - j3
+      - j4
+      - j5
+      - j6
+      - end_joint
+  - name: fake_end_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - end_joint
+initial:  # Define initial robot poses per group
+#  - group: ikfk
+#    pose: home
+
+  []

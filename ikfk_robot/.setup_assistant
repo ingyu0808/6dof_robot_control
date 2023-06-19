@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ikfk
+    relative_path: urdf/ikfk.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/ikfk.srdf
+  CONFIG:
+    author_name: ingyu
+    author_email: chkchk321@daum.net
+    generated_timestamp: 1683531519

@@ -1,0 +1,18 @@
+controller_list:
+  - name: ikfk_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - j2
+      - j3
+      - j4
+      - j5
+      - j6
+      - end_joint
+  - name: end_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - end_joint

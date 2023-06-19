@@ -1,0 +1,50 @@
+ikfk_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - j2
+    - j3
+    - j4
+    - j5
+    - j6
+    - end_joint
+  gains:
+    j2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    j3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    j4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    j5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    j6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    end_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+end_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - end_joint
+  gains:
+    end_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
